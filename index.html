@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Random User Gen</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="app">
+      <img 
+        :class="gender" 
+        v-bind:src="picture" 
+        :alt="`${firstName} ${lastName}`" 
+      />
+      <h1>Hello World</h1>
+      <h2>Meet {{firstName}} a {{gender}} with last name {{lastName}}</h2>
+          <button @click="getUser()">Get rand</button> 
+    </div>
+
+    <script src="https://unpkg.com/vue@3.0.5"></script>  
+    <script src="app.js"></script>
+  </body>
+</html>
